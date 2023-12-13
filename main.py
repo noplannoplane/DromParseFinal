@@ -139,7 +139,7 @@ for filename in os.listdir('pages_html'):
             if title_tag:
                 titles.append(title_tag.text)
 
-# Запись данных из тега <title> в CSV файл
+# Запись данных из тега <title> в CSV файл  # ЭТО НЕ ТО,ЧТО НУЖНО!!!!!!
 with open('Data.csv', 'w', newline='', encoding='utf-8') as csv_file:
     writer = csv.writer(csv_file)
     for title in titles:
